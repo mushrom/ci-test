@@ -34,3 +34,6 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          
+      - name: compile stuff
+        run: c++ -o hello hello.cpp -Wall -Werror -std=c++17
