@@ -41,6 +41,9 @@ jobs:
           id
           ls
           env
+          pkg-config --list-all
 
       - name: compile stuff
-        run: c++ -o hello $GITHUB_WORKSPACE/hello.cpp -Wall -Werror -std=c++17
+        run: |
+          c++ -o hi hi.cpp -Wall -Werror -std=c++17
+          ./hi
