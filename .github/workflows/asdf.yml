@@ -6,6 +6,7 @@ on:
 
 jobs:
   asdfer:
+    runs-on: ubuntu-latest
     steps:
     - name: echoer
       run: echo "Created a tag! have `git describe --always`"
