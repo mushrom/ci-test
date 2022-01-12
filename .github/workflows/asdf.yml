@@ -8,5 +8,6 @@ jobs:
   asdfer:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
     - name: echoer
       run: echo "Created a tag! have `git describe --always`"
