@@ -1,0 +1,11 @@
+name: asdf
+
+on:
+  workflow_dispatch:
+  create:
+
+jobs:
+  asdfer:
+    steps:
+    - name: echoer
+      run: echo "Created a tag! have `git describe --always`"
